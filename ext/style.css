@@ -1,0 +1,271 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquoe,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 13px;
+    color: #555;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:link,
+a:visited {
+    color: #444444;
+}
+a:hover {
+    color: #444444;
+}
+.center {
+    position: absolute;
+    background-color: #f5f5f5;
+    border-radius: 90px;
+    width: 750px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin: -265px 0px 0px -375px;
+}
+.photo {
+    display: block;
+    text-align: center;
+    margin: 77px 0px 20px 0px;
+}
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border: 3px solid white;
+    box-shadow: 0 0 7px #666;
+}
+.line {
+    width: 50%;
+    height: 1px;
+    background-color: #dddddd;
+    margin: 20px auto 20px auto;
+}
+.about {
+    width: 490px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 30px;
+}
+.about font:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    line-height: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.about font {
+    text-decoration: underline;
+    cursor: help
+}
+.contacts {
+    display: block;
+    text-align: center;
+    height: 41px;
+    margin-top: 10px;
+    font-size: 18px
+}
+.contact {
+    display: inline-block;
+    position: relative;
+}
+.contact .hint {
+    display: none;
+}
+.hint.left {
+    margin-left: -32px;
+}
+.hint.right {
+    margin-left: -65px;
+}
+.contact:hover .hint {
+    display: block;
+    position: absolute;
+    background: #9d9d9d;
+    font-family: Arial;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+.contact img {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    padding: 8px;
+    opacity: 0.7;
+}
+.contact:hover img {
+    opacity: 1.0;
+}
+.contacts a { 
+display: inline-block; 
+vertical-align: bottom; 
+}
+.fa-stack {
+    position:relative
+}
+h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: normal;
+    color: #444444;
+}
+h2 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(68, 68, 68, 0.5);
+}
+h3 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(68, 68, 68, 0.5);
+}
+.pgp {
+    margin: 5px;
+    position: relative;
+    text-align: center;
+}
+@media screen and (max-width: 750px) {
+    body {
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+    .center {
+        position: relative;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        left: auto;
+        top: auto;
+        display: table-cell;
+        vertical-align: middle;
+        background: #fff;
+    }
+    .photo {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .about {
+        max-width: 490px;
+        width: auto;
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-height: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+    .center {
+        position: relative;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        left: auto;
+        top: auto;
+        display: table-cell;
+        vertical-align: middle;
+        background: #fff;
+    }
+    .photo {
+        margin-top: 0px;
+    }
+}
+.pgp > * {
+    margin-right: 1px;
+}
